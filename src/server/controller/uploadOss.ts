@@ -4,8 +4,8 @@ const OSS = require('ali-oss');
 const multiparty = require('multiparty');
 const client = new OSS({
     region: 'oss-cn-beijing', //自定义项
-    accessKeyId: 'LTAI4FkhGCKz6jpavrg7dVz9', //自定义项
-    accessKeySecret: 'fZL6FrvSNH3IRk7YX6rwiynRqe7r04', //自定义项
+    accessKeyId: process.env.ACCESSKEYID, //自定义项
+    accessKeySecret: process.env.ACCESSKEYSECRET, //自定义项
 });
 const uploadOss = async (req: any, res: any, next: () => unknown) => {
     // eslint-disable-next-line camelcase
