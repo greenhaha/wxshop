@@ -30,9 +30,9 @@ const getFileBody = (ctx: any) => {
 
 const uploadS3 = async (req: any, res: any, next: any) => {
     const aws = {
-        accessKeyId: 'AKIATZJCDBGLBVJMRD4V',
-        secretAccessKey: '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',
-        bucket: 'ctfxbucket',
+        accessKeyId: '',
+        secretAccessKey: '',
+        bucket: '',
         acl: 'private',
     };
     AWS.config.credentials = {
